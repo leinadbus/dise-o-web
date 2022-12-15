@@ -7,7 +7,38 @@
 		* { /* Todos los elementos de la página tienen borde */
 			border: thin solid #442A5D;
 		}
+		#negrita{
+			display: block;
+		}
+		p:nth-child(2){
+		display: inline;
+		}
+
+		p:nth-child(3){
+		display: inline;
+		}
+
+		p:nth-child(6),p:nth-child(5){
+			
+			display: list-item;
+			list-style-position: inside;
+			margin-left: 40px;
+		}
+		p:nth-child(7){
+			display: none;
+		}
 		
+		.bloqueenlinea{
+			display:inline-block;
+			width: 200px; height: 200px; 
+			
+		}
+
+		p:nth-child(12),p:nth-child(10),p:nth-child(11){
+			display: table-cell;
+			list-style-position: inside;
+			width: 2000px; height: 20px;
+		}
 		/* Del resto hay que crear clases por cada párrafo, en función de la propiedad display */
 		
 	</style>
@@ -15,7 +46,7 @@
 
 <body>
 	<span>Con la propiedad display podemos cambiar la forma por defecto en que aparace cada elemento y hacer que un elemento como una negrita se comporte como si fuera un bloque: <span id="negrita"><strong><a>Negrita</a></strong></span>, y cuando continuamos la frase salta antes y después de la negrita de linea como cualquier elemento en bloque.</span>
-	<p>O hacer que un elemento como este párrafo se comporte como si fuera un elemento en linea.</p>
+	<p id="perro">O hacer que un elemento como este párrafo se comporte como si fuera un elemento en linea.</p>
 
 	<p>Este es otro parrafo puesto en modo linea.</p>
 	<p>Párrafo normal.</p>
