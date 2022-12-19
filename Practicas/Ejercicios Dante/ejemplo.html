@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-anchor: middle;
+        }
+        #contenedor {
+            background-color: black;
+            height: 200vh;
+            
+        }
+
+        *{
+            margin:0%;
+            padding: 0%; 
+        }
+
+        #contenedor div:nth-child(1){
+
+                background-color: silver;
+                float: right;
+               
+        }
+
+        #contenedor div:nth-child(2){
+            
+            background-color: blue;
+           
+            z-index: 1;
+            margin: auto;
+            clear: both;
+
+        }
+
+        #contenedor div:nth-child(3){
+
+            background-color: red;
+            
+            float: left;
+          
+            
+        }
+
+        #caja{
+            position: sticky;
+            width: 200px;
+            height: 200px;
+            top:0;
+            
+              
+           
+        }
+        @media (max-width: 390px) and (max-height: 390px) {
+            body{
+                background-color: purple;
+            }
+        }
+        /* position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%); */
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="caja"><P>pepe</P></div>
+        <div id="caja"><P>pepo</P></div>
+        <div id="caja"><P>papa</P></div>
+    </body>
+    </div>
+
+   
+</html>
