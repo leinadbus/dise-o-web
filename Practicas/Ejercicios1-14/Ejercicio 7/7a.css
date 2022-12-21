@@ -1,0 +1,16 @@
+#marco1{
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    box-shadow: 5px 10px 10px 5px black ;
+
+}
+
+#marco1>img{
+    width:300px;
+    height:300px;
+}
+
+body{
+background-image: url("madrid.jpg");
+}
