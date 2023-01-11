@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --rojoEspaña: rgb(198,11,30);
+        }
+div{
+    display: block;
+    width: 700px;
+    height: 200px;
+
+}
+
+#caja1{
+    background-color: rgb(198,11,30);
+    position: relative; 
+    z-index: 30;
+
+}
+#caja2{
+    background-color: blueviolet;
+    position: relative;
+    top: -70px;
+    left: 70px;
+    z-index: 20;
+
+    /* bottom:100px */
+
+}
+#caja3{
+    /* background-color: rgb(198,11,30); */
+    background-color: greenyellow;
+
+}
+    </style>
+</head>
+<body>
+    <h1>POSITION</h1>
+    <div id="caja1">Caja 1</div>
+    <div id="caja2">Caja 2</div>
+    <div id="caja3">Caja 3</div>
+
+    <p>Las que mas prioridad tienen son las top y left, las bottom y 
+        rigth no sirven si están definidas las anteriores</p>
+    <p>El z-index SOLO funciona si tenemos puesta la POSITION</p>
+    <p>El z-index es conveniente ir sumando de 10 en 10 por si acaso necesitamos introducir posiciones</p>
+    <p>El position absolute: no se reserva el espacio y puede ser ocupado por otros elementos
+        , los elementos se van a posicionar en el viewport salvo que el contenedor este posicionado </p>
+    
+        
+</body>
+</html>

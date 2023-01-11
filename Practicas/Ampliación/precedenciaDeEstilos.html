@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1 {
+    color: red;
+}
+
+.pepe{
+    color: yellow;
+}
+
+h1 {
+    color:blue;
+}
+
+.pepa{
+    color:yellow;
+}
+
+
+[azulado="color-blue"]{
+    color: blue !important;  
+    /* El important se fuma las prioridades, no se recomienda el uso no se sabe porque */
+}
+
+.pepa{
+    color:red;
+}
+
+
+
+    </style>
+</head>
+<body>
+<h1>Precedencia de Estilos</h1>
+<p>Niveles de Especificidad</p>
+En orden ascendente:
+<ul>
+    <li>!important</li>
+    <li>estilos en linea</li>
+    <li>Identificadores</li>
+    <li>Clases / Pseudo-clases / Atributos</li>
+    <li>Elementos / pseudo-elementos</li>
+</ul>
+
+<h4>Ejemplo:</h4>
+
+<h1>Titulo editado en css</h1>
+<p>Al haber dos estilos para h1 se aplica el último en cascada.</p>
+
+<h1 class="pepe">Titulo editado en css</h1>
+<p>Las clases van por encima de los elementos, pero si ponemos dos clases:</p>
+
+<h1 class="pepa">Titulo editado en css</h1>
+<P>Se aplica el que esté mas abajo en la cascada</P>
+
+<h1 class="pepa" azulado="color-blue">Titulo editado en css</h1>
+<p>En cascada si lo ponemos en ultima posición, se quedará con la prioridad, pero no si va antes</p>
+
+<p>Más <a href="https://developer.mozilla.org/es/docs/Web/CSS/Specificity" target="_blank">aquí</a></p>
+</body>
+</html>

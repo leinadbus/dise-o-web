@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .texto{
+            padding: 20px;
+        }
+        .texto::first-line{
+            color: blue;
+            font-size: 2em;
+        }
+
+        .texto::first-letter{
+            color: blue;
+            font-size: 2em;
+            background-color: yellow;
+        }
+
+        input::placeholder{
+            margin: 50px;
+            border: 4px solid red;
+            background-color: grey;
+            width: 170px;
+        }
+/* no funciona asi, pero el placeholder si funciona en el input */
+        input::selection{
+            margin: 50px;
+            border: 4px solid red;
+            background-color: grey;
+            width: 170px;
+        }
+
+        .pepe::after{
+            content: "marginado ";
+            color:red
+        }
+
+        .pepe::before{
+            content: " desterrado";
+            color: green;
+        }
+
+        .caja1{
+            height: 200px;
+            width: 200px;
+            background:slateblue ;
+            transition: background 2s, height 1s, width 1s;
+                                /* igual que: all 1s */
+        }
+        /* :active para cuando le pulsas */
+        .caja1:hover{
+            background-color: plum;
+            height: 300px;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Peduso-elementos</h1>
+    <p>No forman parte del DOM</p>
+    <ul>
+        <li>::FIRST-LINE (no funciona con el display:in-line pero si con los demás)</li>
+        <li>::FIRST-LETTER (no funciona con el display:in-line pero si con los demás)</li>
+        <li>::PLACEHOLDER</li>
+        <li>::SELECTION</li>
+        <li>::AFTER</li>
+        <li>::BEFORE</li>
+    </ul>
+
+    <div class="texto">
+        <p>                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </div>
+
+    <h3>Placeholder:</h3>
+    <form class="place">
+        <input type="text" placeholder="Inserte su nombre">
+    </form>
+
+    <h3>Selection:</h3>
+    <form class="sele">
+        <input type="text" placeholder="Inserte su nombre">
+    </form>
+
+    <h3>CONTENT AFTER y BEFORE</h3>
+    <p class="pepe">PEPE</p>
+
+
+    <h3>TRANSFORM, TRANSLATE, :HOVER, :ACTIVE, :LINK, :VISITED </h3>
+
+    <div class="caja1">
+        Div de prueba
+    </div>
+</body>
+</html>

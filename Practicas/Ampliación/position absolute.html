@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --rojoEspaña: rgb(198,11,30);
+        }
+div{
+    display: block;
+    width: 150px;
+    height: 150px;
+
+}
+
+#contenedor{
+    margin: 100px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: red 4px solid;
+}
+
+#caja1{
+    background-color: rgb(198,11,30);
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    /* z-index: 30; */
+
+}
+#caja2{
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* opacity: 0.6; */
+    /* top: -70px;
+    left: 70px;
+    z-index: 20; */
+
+    /* bottom:100px */
+
+}
+#caja3{
+    /* background-color: rgb(198,11,30); */
+    background-color: greenyellow;
+    position: absolute;
+    /* transform: translate(170%,50%); */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+
+}
+
+#caja4{
+    background-color: grey;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#caja5{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <h1>POSITION</h1>
+
+<div id="contenedor">
+    <div id="caja1">Caja 1</div>
+    <div id="caja2">Caja 2</div>
+    <div id="caja3">Caja 3</div>
+    <div id="caja4">Caja 4</div>
+    <div id="caja5">Caja 5</div>
+</div>
+    <p>Las que mas prioridad tienen son las top y left, las bottom y 
+        rigth no sirven si están definidas las anteriores</p>
+    <p>El z-index SOLO funciona si tenemos puesta la POSITION</p>
+    <p>El z-index es conveniente ir sumando de 10 en 10 por si acaso necesitamos introducir posiciones</p>
+    <p>El position absolute: no se reserva el espacio y puede ser ocupado por otros elementos
+        , los elementos se van a posicionar en el viewport salvo que el contenedor este posicionado </p>
+    
+        <!-- Queremos dibujar una caja en cada esquina y una en el centro -->
+</body>
+</html>
