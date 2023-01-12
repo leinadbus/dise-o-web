@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 01</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .contenedor {
+            width: 600px;
+            height: 300px;
+            background-color: lightgrey;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black;
+            padding: 10px;
+            display:flex;
+            column-gap: 1%;
+            row-gap: 1%;
+            flex-wrap: wrap;
+            align-items: baseline;
+            
+
+            /* flex-shrink: 9; */
+            /* flex-grow: 80;  */
+            /* Añade estilos a partir de aquí (si es necesario) */
+           /* column-gap: 10; */
+        }
+
+        div {
+            font-size: 50px;
+            font-weight: bold;
+            border: 10px solid;
+            border-radius: 5px;
+            background-color: white;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Añade estilos a partir de aquí (si es necesario) */
+
+            flex-grow: 1;
+            
+            
+        }
+
+        .item1{
+            order: 1;
+            align-self: flex-end;
+        }
+        .item2{
+       align-self: flex-end;
+    }
+    .item3{
+        order: 2;
+        align-self: center;
+    }
+    .item4{
+        align-self: center;
+    }
+    .item5{
+        order: 6;
+    }
+    
+
+        /* Añade estilos a partir de aquí (si es necesario) */
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+</body>
+
+</html>
